@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t,t1,x,a,temp;
+    set <int, greater <int> > st;
+    cin>>t;
+    while(t--)
+    {
+        cin>>t1;temp=t1;
+        while(t1--)
+        {
+            cin>>x;if(x<=temp){st.insert(x);}
+        }
+    cout<<temp-st.size()<<endl;st.clear();
+
+    }
+
+
+}
