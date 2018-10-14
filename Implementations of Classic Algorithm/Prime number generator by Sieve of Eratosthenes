@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int isprime(int n)
+{
+    bool prime[n];
+    memset(prime, true, sizeof(prime));
+
+    for(int p=2;p*p<=n;p++)
+    {
+        if (prime[p]==true)//Since p is not changed it is prime.
+        {
+
+        //Updating all multiples of p
+        for(int i=p*2;i<n;i+=p)prime[i]=false;
+        //Incrementing i, p times.
+        //i will not be checked again, because of that if-condition above
+        //and also because its a multiple and can not be a prime
+        }
+    }
+
+     for (int p=2; p<n; p++)
+     {
+       if (prime[p]){cout << p << endl;}
+
+    }
+
+}
+int main()
+{
+    int x;
+    cin>>x;
+    isprime(x);
+    return 0;
+}
