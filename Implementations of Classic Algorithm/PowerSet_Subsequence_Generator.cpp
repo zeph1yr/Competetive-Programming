@@ -1,3 +1,6 @@
+//Power Set
+//Subsequence
+
 #include <bits/stdc++.h>
 using namespace std;
 
