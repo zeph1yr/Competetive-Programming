@@ -16,11 +16,13 @@ using namespace std;
 #define INF 1000000000000000001
 
 long long pow(long long x, long long y){ if (y == 0) return 1; else if (y % 2 == 0) return pow(x, y / 2) * pow(x, y / 2);else return x * pow(x, y / 2) * pow(x, y / 2);}
-long long dig(long long n) return {floor(log10(n) + 1);}
+long long dig(long long n) {return floor(log10(n) + 1);}
 
 int main()
 {
 	io
 	#define int long long
-
+    //int t; cin>>t; while(t--)
+    {
+    }
 }
