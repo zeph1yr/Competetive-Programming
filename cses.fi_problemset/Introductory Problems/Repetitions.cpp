@@ -1,21 +1,20 @@
 #include <iostream>
- 
 using namespace std;
- 
+
 int main()
 {
-    char ch=NULL,temp;
+    char ch,temp = NULL;
+
     int cnt=0,ans=0;
     string str;
     cin>>str;
-    int len=str.size();
-    for(int i=0;i<len;i++)
+
+    for(int i=0;i<str.size();i++)
     {
-       ch=str[i];
-        if(temp==ch){cnt++;ans=max(ans,cnt);}
+        if(temp==str[i]){cnt++;ans=max(ans,cnt);}
         else cnt=0;
-        temp=ch;
+        temp=str[i];
     }
- 
+
     cout<<ans+1;
 }
